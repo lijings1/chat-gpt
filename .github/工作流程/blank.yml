@@ -1,0 +1,7 @@
+docker run -d \
+-p 5000:5000 \
+-e PANDORA_SERVER=0.0.0.0:5000 \
+-e PANDORA_CLOUD=pandora-cloud \
+--restart unless-stopped \
+--name pandora \
+pengzhile/pandora:latest
